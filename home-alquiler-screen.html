@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME Alquiler - Pantalla</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./home-alquiler.css" />
+  </head>
+  <body class="ok-screen">
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="ok-icon-menu" viewBox="0 0 24 24">
+        <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="ok-icon-plus" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="ok-icon-chevron" viewBox="0 0 24 24">
+        <path d="m7 10 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="ok-icon-search" viewBox="0 0 24 24">
+        <path d="m20 20-4.5-4.5M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </symbol>
+      <symbol id="ok-icon-calendar" viewBox="0 0 24 24">
+        <path d="M7 3v3m10-3v3M4.5 9.5h15M6.5 5h11A2.5 2.5 0 0 1 20 7.5v10A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5v-10A2.5 2.5 0 0 1 6.5 5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="ok-icon-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+        <path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+      </symbol>
+      <symbol id="ok-icon-pin" viewBox="0 0 24 24">
+        <path d="M12 21s6-5.7 6-11a6 6 0 1 0-12 0c0 5.3 6 11 6 11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+        <circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+      </symbol>
+      <symbol id="ok-icon-car" viewBox="0 0 24 24">
+        <path d="M5.5 16.5h13M7 17.5v1M17 17.5v1M4.5 13l1.8-4.5A2.4 2.4 0 0 1 8.5 7h7a2.4 2.4 0 0 1 2.2 1.5l1.8 4.5v3.5h-15V13Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+    </svg>
+    <main class="ok-home">
+      <section class="home-coverage" aria-label="Coberturas disponibles">
+        <header class="home-coverage__title">
+          <img src="./assets/ico-shield.svg" alt="" aria-hidden="true" />
+          <h2>&iquest;Qu&eacute; cobertura necesitas?</h2>
+        </header>
+
+        <div class="home-coverage__grid" role="radiogroup" aria-label="Selecciona una cobertura">
+          <button
+            class="home-coverage-card is-selected"
+            type="button"
+            role="radio"
+            aria-checked="true"
+            data-home-coverage-option="basic"
+          >
+            <header class="home-coverage-card__header">
+              <span class="home-coverage-card__radio" aria-hidden="true"></span>
+              <h3>Cobertura B&aacute;sica</h3>
+              <img
+                class="home-coverage-card__shield"
+                src="./assets/ico-shield1-select.svg"
+                data-icon-default="./assets/ico-shield1.svg"
+                data-icon-selected="./assets/ico-shield1-select.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="home-coverage-card__chevron" aria-hidden="true"></span>
+            </header>
+
+            <div class="home-coverage-card__tag home-coverage-card__tag--warning">
+              <span aria-hidden="true">!</span>
+              <strong>FRANQUICIA 0.000&euro;</strong>
+            </div>
+
+            <strong class="home-coverage-card__collapsed-price">
+              000,00&euro;<small>/d&iacute;a</small>
+            </strong>
+
+            <div class="home-coverage-card__body">
+              <ul class="home-coverage-card__features">
+                <li><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Seguro de responsabilidad civil</span></li>
+                <li class="is-muted"><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Cobertura da&ntilde;os carrocer&iacute;a, lunas y ruedas</span></li>
+                <li class="is-muted"><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Asistencia en carretera</span></li>
+                <li class="is-muted"><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Servicio de telemedicina</span></li>
+              </ul>
+
+              <span class="home-coverage-card__details">Detalles</span>
+            </div>
+
+            <strong class="home-coverage-card__included">Incluido</strong>
+          </button>
+
+          <button
+            class="home-coverage-card"
+            type="button"
+            role="radio"
+            aria-checked="false"
+            data-home-coverage-option="premium"
+          >
+            <span class="home-coverage-card__badge">M&Aacute;S POPULAR</span>
+            <header class="home-coverage-card__header">
+              <span class="home-coverage-card__radio" aria-hidden="true"></span>
+              <span class="home-coverage-card__title-stack">
+                <h3>Premium Cover</h3>
+              </span>
+              <img
+                class="home-coverage-card__shield"
+                src="./assets/ico-shield2.svg"
+                data-icon-default="./assets/ico-shield2.svg"
+                data-icon-selected="./assets/ico-shield2-select.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="home-coverage-card__chevron" aria-hidden="true"></span>
+            </header>
+
+            <div class="home-coverage-card__tag home-coverage-card__tag--success">
+              <span aria-hidden="true"></span>
+              <strong>ELIMINACI&Oacute;N DE FRANQUICIA</strong>
+              <i aria-hidden="true">i</i>
+            </div>
+
+            <div class="home-coverage-card__body">
+              <ul class="home-coverage-card__features">
+                <li><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Seguro de responsabilidad civil</span></li>
+                <li><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Cobertura da&ntilde;os carrocer&iacute;a, lunas y ruedas</span></li>
+                <li class="is-muted"><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Asistencia en carretera</span></li>
+                <li class="is-muted"><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Servicio de telemedicina</span></li>
+              </ul>
+
+              <span class="home-coverage-card__details">Detalles</span>
+            </div>
+
+            <div class="home-coverage-card__price">
+              <span>Descuento online</span>
+              <div>
+                <del>000,00&euro;</del>
+                <strong class="home-coverage-card__discount">-10%</strong>
+                
+              </div>
+              <strong>000,00&euro;<small>/d&iacute;a</small></strong>
+            </div>
+          </button>
+
+          <button
+            class="home-coverage-card"
+            type="button"
+            role="radio"
+            aria-checked="false"
+            data-home-coverage-option="super"
+          >
+            <span class="home-coverage-card__badge">M&Aacute;S COMPLETA</span>
+            <header class="home-coverage-card__header">
+              <span class="home-coverage-card__radio" aria-hidden="true"></span>
+              <span class="home-coverage-card__title-stack">
+                <h3>Super Premium Cover</h3>
+              </span>
+              <img
+                class="home-coverage-card__shield"
+                src="./assets/ico-shield3.svg"
+                data-icon-default="./assets/ico-shield3.svg"
+                data-icon-selected="./assets/ico-shield3-select.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <span class="home-coverage-card__chevron" aria-hidden="true"></span>
+            </header>
+
+            <div class="home-coverage-card__tag home-coverage-card__tag--success">
+              <span aria-hidden="true"></span>
+              <strong>ELIMINACI&Oacute;N DE FRANQUICIA</strong>
+              <i aria-hidden="true">i</i>
+            </div>
+
+            <div class="home-coverage-card__body">
+              <ul class="home-coverage-card__features">
+                <li><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Seguro de responsabilidad civil</span></li>
+                <li><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Cobertura da&ntilde;os carrocer&iacute;a, lunas y ruedas</span></li>
+                <li><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Asistencia en carretera</span></li>
+                <li><span class="home-coverage-card__feature-icon" aria-hidden="true"></span><span>Servicio de telemedicina</span></li>
+              </ul>
+
+              <span class="home-coverage-card__details">Detalles</span>
+            </div>
+
+            <div class="home-coverage-card__price">
+              <span>Descuento online</span>
+              <div>
+                <del>000,00&euro;</del>
+                <strong class="home-coverage-card__discount">-25%</strong>
+              </div>
+              <strong>000,00&euro;<small>/d&iacute;a</small></strong>
+            </div>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const coverageOptions = document.querySelectorAll("[data-home-coverage-option]");
+
+      function notifyParentResize() {
+        const coverageModule = document.querySelector(".home-coverage");
+
+        if (!coverageModule) {
+          return;
+        }
+
+        const styles = window.getComputedStyle(coverageModule);
+        const marginTop = Number.parseFloat(styles.marginTop) || 0;
+        const marginBottom = Number.parseFloat(styles.marginBottom) || 0;
+        const height = Math.ceil(
+          coverageModule.getBoundingClientRect().height + marginTop + marginBottom
+        );
+
+        window.parent?.postMessage({ type: "ok-home-resize", height }, "*");
+      }
+
+      function syncCoverage(option) {
+        coverageOptions.forEach((card) => {
+          const isActive = card === option;
+          const icon = card.querySelector(".home-coverage-card__shield");
+
+          card.classList.toggle("is-selected", isActive);
+          card.setAttribute("aria-checked", String(isActive));
+
+          if (icon instanceof HTMLImageElement) {
+            icon.src = isActive ? icon.dataset.iconSelected || icon.src : icon.dataset.iconDefault || icon.src;
+          }
+        });
+
+        notifyParentResize();
+      }
+
+      coverageOptions.forEach((card) => {
+        card.addEventListener("click", () => syncCoverage(card));
+      });
+
+      window.addEventListener("load", () => {
+        notifyParentResize();
+      });
+    </script>
+  </body>
+</html>

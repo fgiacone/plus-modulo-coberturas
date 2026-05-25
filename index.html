@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME Alquiler - Responsive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./home-alquiler.css" />
+  </head>
+  <body class="responsive-viewer">
+    <header class="preview-toolbar">
+      <a class="preview-toolbar__title" href="./home-alquiler-screen.html" target="_blank" rel="noopener">
+        MÓDULO COBERTURAS
+      </a>
+
+      <div class="preview-width-indicator" aria-live="polite" aria-label="Ancho actual de OK Home">
+        <span data-preview-width-value>1920px</span>
+      </div>
+
+      <div class="viewport-switcher" role="group" aria-label="Seleccionar resolucion">
+        <button class="viewport-switcher__option is-active" type="button" data-preview-mode="desktop" aria-pressed="true">
+          Desktop
+        </button>
+        <button class="viewport-switcher__option" type="button" data-preview-mode="tablet" aria-pressed="false">
+          Tablet
+        </button>
+        <button class="viewport-switcher__option" type="button" data-preview-mode="mobile" aria-pressed="false">
+          Mobile
+        </button>
+      </div>
+    </header>
+
+    <main class="preview-stage" aria-label="Previsualizacion responsive">
+      <div class="preview-canvas" data-preview-canvas data-panel-group-direction="horizontal">
+        <div class="preview-frame" id="home-alquiler-preview-panel" data-preview-frame data-current-view="desktop">
+          <iframe
+            class="preview-frame__iframe"
+            src="./home-alquiler-screen.html"
+            title="HOME Alquiler responsive"
+            scrolling="no"
+            data-preview-iframe
+          ></iframe>
+        </div>
+
+        <div
+          class="preview-resize-handle"
+          role="separator"
+          tabindex="0"
+          data-panel-group-direction="horizontal"
+          data-resize-handle
+          data-resize-handle-state="inactive"
+          data-panel-resize-handle-enabled="true"
+          aria-controls="home-alquiler-preview-panel"
+          aria-label="Redimensionar vista responsive"
+          aria-orientation="vertical"
+          aria-valuemin="25"
+          aria-valuemax="100"
+          aria-valuenow="100"
+          style="touch-action: none; user-select: none"
+        ></div>
+      </div>
+    </main>
+
+    <script src="./home-alquiler.js"></script>
+  </body>
+</html>
